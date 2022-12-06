@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: auth-configmap
+data:
+  MYSQL_HOST: mysql-db.c6upygl79klk.ap-south-1.rds.amazonaws.com
+  MYSQL_USER: admin
+  MYSQL_DB: auth
+  MYSQL_PORT: "3306"

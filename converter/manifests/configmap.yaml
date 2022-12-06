@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: converter-configmap
+data:
+  MONGODB_USERNAME : mongo
+  MONGODB_CLUSTER_URL : mongocluster.yo3gpdn.mongodb.net
+  MP3_QUEUE: "mp3"
+  VIDEO_QUEUE: "video"
