@@ -16,7 +16,7 @@ server.config["MYSQL_PORT"] = os.getenv("MYSQL_PORT")
 def login():
     auth = request.authorization
     if not auth:
-        return "missing authentication", 401
+        return "missing credentials", 401
 
     # Check db for username and password
     cur = mysql.connection.cursor()
